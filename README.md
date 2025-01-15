@@ -47,7 +47,3 @@ The webpage is organized as:
 This project is licensed under the **GNU Lesser General Public License (LGPL) Version 2.1**. 
 
 You are free to use, modify, and distribute this project under the terms of the LGPL 2.1. See the `LICENSE` file for the full license text or visit the official [GNU website](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) for more details.
-
----
-
-Let me know if you'd like to expand this or need a `LICENSE` file template!
