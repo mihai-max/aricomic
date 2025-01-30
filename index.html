@@ -1,139 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ari Character Board</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
-        }
-        .board {
-            display: grid;
-            grid-template-rows: auto auto auto;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #1e1e1e;
-            border: 5px solid #333;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 15px;
-        }
-        .title {
-            grid-column: 1 / 4;
-            text-align: center;
-            font-size: 2rem;
-            color: #bb86fc;
-            background: #333;
-            padding: 10px;
-            text-transform: uppercase;
-            border-bottom: 3px solid #bb86fc;
-            border-radius: 15px;
-        }
-        .center-image {
-            grid-column: 2 / 3;
-            text-align: center;
-        }
-        .center-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .box {
-            border: 2px solid #444;
-            padding: 10px;
-            background-color: #1e1e1e;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-        }
-        .box-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-        }
-        .box:hover .box-content {
-            max-height: 500px;
-        }
-        .box h3 {
-            color: #bb86fc;
-        }
-        .footer {
-            grid-column: 1 / 4;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9rem;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
-    <div class="board">
-        <div class="title">Ari: Eine Charakterisierung</div>
-
-        <div class="center-image">
-            <img src="ari.webp" alt="Portrait of Ari">
-        </div>
-
-        <div class="box">
-            <h3>Persönliche Werte</h3>
-            <div class="box-content">
-                <p>
-                    Ari hält wenig von Oberflächlichkeit, kämpft gegen Rollenklischees und schätzt Authentizität.
-                </p>
-            </div>
-        </div>
-
-        <div class="box">
-            <h3>Grunddaten</h3>
-            <div class="box-content">
-                <p>
-                    <strong>Name:</strong> Arielle (Ari)<br>
-                    <strong>Alter:</strong> 17 Jahre<br>
-                    <strong>Hobbys:</strong> Skateboardfahren<br>
-                    <strong>Lieblingsfarbe:</strong> Rot
-                </p>
-            </div>
-        </div>
-
-        <div class="box">
-            <h3>Familie</h3>
-            <div class="box-content">
-                <p>
-                    Ihre Mutter Fanni hat sie nach der Disney-Meerjungfrau benannt, ist aber oft abwesend. Ihr Ersatzvater Bob hat sie großgezogen.
-                </p>
-            </div>
-        </div>
-
-        <div class="box">
-            <h3>Vergangenheit</h3>
-            <div class="box-content">
-                <p>
-                    Ari hatte früher viel Wut in sich und ließ diese im Skaten raus. Das Skateboardfahren war eine "lebensrettende Maßnahme" für sie.
-                </p>
-            </div>
-        </div>
-
-        <div class="box">
-            <h3>Beziehungen</h3>
-            <div class="box-content">
-                <p>
-                    Sie ist eng mit Bob verbunden, hat jedoch ein konfliktbeladenes Verhältnis zu Leyla und fühlt sich oft unverstanden.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © 2025 Charakterisierung erstellt von Mihai Laudat. Hallo Hr. Bethcke!
-    </div>
-</body>
-</html>
+Ari Character Board
+body {
+font-family: Arial, sans-serif;
+background-color: #121212;
+color: #e0e0e0;
+margin: 0;
+padding: 0;
+}
+.board {
+display: grid;
+grid-template-rows: auto auto auto;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+max-width: 1200px;
+margin: 20px auto;
+padding: 20px;
+background: #1e1e1e;
+border: 5px solid #333;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+}
+.title {
+grid-column: 1 / 4;
+text-align: center;
+font-size: 2rem;
+color: #bb86fc;
+background: #333;
+padding: 10px;
+text-transform: uppercase;
+border-bottom: 3px solid #bb86fc;
+border-radius: 15px;
+}
+.center-image {
+grid-column: 2 / 3;
+text-align: center;
+}
+.center-image img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.box {
+border: 2px solid #444;
+padding: 10px;
+background-color: #1e1e1e;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+border-radius: 15px;
+overflow: hidden;
+transition: all 0.3s ease-in-out;
+}
+.box-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s ease;
+}
+.box:hover .box-content {
+max-height: 500px;
+}
+.box h3 {
+color: #bb86fc;
+}
+.footer {
+grid-column: 1 / 4;
+text-align: center;
+padding: 10px;
+font-size: 0.9rem;
+color: #777;
+}
+Ari: Eine Charakterisierung
+Persönliche Werte
+Ari hält wenig von Oberflächlichkeit, kämpft gegen Rollenklischees und schätzt Authentizität.
+Grunddaten
+Name: Arielle (Ari)
+Alter: 17 Jahre
+Hobbys: Skateboardfahren
+Lieblingsfarbe: Rot
+Familie
+Ihre Mutter Fanni hat sie nach der Disney-Meerjungfrau benannt, ist aber oft abwesend. Ihr Ersatzvater Bob hat sie großgezogen.
+Vergangenheit
+Ari hatte früher viel Wut in sich und ließ diese im Skaten raus. Das Skateboardfahren war eine "lebensrettende Maßnahme" für sie.
+Beziehungen
+Sie ist eng mit Bob verbunden, hat jedoch ein konfliktbeladenes Verhältnis zu Leyla und fühlt sich oft unverstanden.
